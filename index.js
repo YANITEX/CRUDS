@@ -121,6 +121,10 @@ function clearAll(){
 }
 
 function deletAll() {
+  clearAll() ;
+  mode = 'create' ;
+  submit.textContent = 'create' ;
+  count.style.display = 'block' ;
   localStorage.clear() ;
   products.splice(0) ;
   showData() ;
